@@ -1,7 +1,7 @@
 streamlit
 torch
 transformers
-huggingface_hub
-sentencepiece
-protobuf
 torchvision
+huggingface_hub
+requests
+beautifulsoup4
