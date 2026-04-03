@@ -51,7 +51,7 @@ def load_model():
     # model_name = "your-username/fakenews-distilbert"
 
     # If running locally with saved model:
-    model_name = "fakenews-distilbert"  # path to your saved model folder
+    model_name = "impactcircle/fakenews-distilbert"  # path to your saved model folder
 
     tokenizer = DistilBertTokenizer.from_pretrained(model_name)
     model = DistilBertForSequenceClassification.from_pretrained(model_name)
