@@ -218,13 +218,14 @@ def load_model():
 def predict(text, tokenizer, model):
     inputs = tokenizer(
         text, return_tensors="pt", truncation=True,
-        max_length=512, padding=True
+        max_length=256, padding=True
     )
     with torch.no_grad():
         logits = model(**inputs).logits
     probs = F.softmax(logits, dim=1)[0]
-    real_score = probs[0].item()
-    fake_score = probs[1].item()
+    # 0=FAKE, 1=REAL
+    fake_score = probs[0].item()
+    real_score = probs[1].item()
     label = "FAKE" if fake_score > real_score else "REAL"
     confidence = max(real_score, fake_score) * 100
     return label, confidence, real_score, fake_score
