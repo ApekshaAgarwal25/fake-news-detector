@@ -4,7 +4,7 @@ A machine learning web app that classifies news articles as **real or fake** usi
 
 ## Live Demo
 [**Try it here →**](https://fake-news-detector-impactcircle.streamlit.app/)
-
+**App URL:** https://fake-news-detector-impactcircle.streamlit.app
 ---
 
 ## Results
