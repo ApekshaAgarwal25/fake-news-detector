@@ -71,8 +71,6 @@ def load_model():
         model_name, force_download=False
     )
     model.eval()
-    # Verify label mapping
-    st.write(f"Label mapping: {model.config.id2label}")
     return tokenizer, model
 
 
