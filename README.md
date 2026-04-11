@@ -3,11 +3,12 @@
 A machine learning web app that classifies news articles as **real or fake** using a fine-tuned DistilBERT transformer model.
 
 ## Live Demo
-[**Try it here →**](https://fake-news-detector-impactcircle.streamlit.app)
+[**Try it here →**](https://fake-news-detector-impactcircle.streamlit.app/)
 
 ---
 
 ## Results
+![Confusion Matrix](confusion_matrix.png)
 
 | Metric | Score |
 |--------|-------|
